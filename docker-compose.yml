@@ -3,10 +3,10 @@ services:
     image: postgres:15
     environment:
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: admin123
       POSTGRES_DB: observability_db
     ports:
-      - "5432:5432"
+      - "5433:5432"
   redis:
     image: redis:7
     ports:
